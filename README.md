@@ -8,7 +8,7 @@
 ```javascript
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const { Util } = require("discord-utility");
+const { Util } = require("utility-discord");
 const util = new Util();
 const prefix = 'Your-Prefix-Here'
 
@@ -37,7 +37,9 @@ client.on("message", async message => {
    message.channel.send(embed);
    
    }
-})
+});
+
+client.login("Your Token Here");
 
 ```
 
@@ -46,7 +48,7 @@ client.on("message", async message => {
 | :------------- | :----------: | -----------: |
 |  fetchJoke() | content.title: Joke Title<br>content.body (If any): Joke's second part. (Will only work if there is one).| Fetch random joke.    |
 | fetchMeme()   | content.title: Meme Title<br>content.image: The meme. | Fetches random meme.    |
-| fetchFact() | content.fact: The fact | Fetches random fact. |
+| fetchFact() | content.fact: The fact | Fetches random fact.       |
 | fetchDogFact() | content.fact: The fact | Fetches random dog fact. |
 | fetchCatFact() | content.fact: The fact | Fetches random cat fact. | 
 | fetchPandaFact() | content.fact: The fact | Fetches random panda fact. | 
